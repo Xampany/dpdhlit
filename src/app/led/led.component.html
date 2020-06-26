@@ -1,0 +1,13 @@
+<p>led works!</p>
+
+<p>Index: {{ led?.index + 1 }}</p>
+
+<div class="box" [style.background-color]="led?.color" (click)="handleClick($event)">
+
+</div>
+
+<pre *ngIf="false"><code>{{ led | json }}</code></pre>
+
+<p>
+  {{ led?.color | uppercase  | slice:2 }}
+</p>
