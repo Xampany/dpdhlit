@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { LedComponent } from './led/led.component';
 import { LedListComponent } from './led-list/led-list.component';
 import { PiColorPipe } from './pi-color.pipe';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { PiColorPipe } from './pi-color.pipe';
     PiColorPipe
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
