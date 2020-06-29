@@ -9,5 +9,5 @@
 <pre *ngIf="false"><code>{{ led | json }}</code></pre>
 
 <p>
-  {{ led?.color | uppercase  | slice:2 }}
+  {{ led?.color | piColor:'rgb' }}
 </p>

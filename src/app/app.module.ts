@@ -4,12 +4,14 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { LedComponent } from './led/led.component';
 import { LedListComponent } from './led-list/led-list.component';
+import { PiColorPipe } from './pi-color.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     LedComponent,
-    LedListComponent
+    LedListComponent,
+    PiColorPipe
   ],
   imports: [
     BrowserModule
