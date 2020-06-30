@@ -9,6 +9,9 @@ import {HttpClientModule} from '@angular/common/http';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { ControlsComponent } from './controls/controls.component';
 import {MatButtonModule} from '@angular/material/button';
+import {MatGridListModule} from '@angular/material/grid-list';
+import { ColorFormComponent } from './color-form/color-form.component';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,13 +19,17 @@ import {MatButtonModule} from '@angular/material/button';
     LedComponent,
     LedListComponent,
     PiColorPipe,
-    ControlsComponent
+    ControlsComponent,
+    ColorFormComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     NoopAnimationsModule,
-    MatButtonModule
+    MatButtonModule,
+    MatGridListModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
