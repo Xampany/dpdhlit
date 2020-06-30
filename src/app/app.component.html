@@ -1,3 +1,4 @@
 <h1>Hallo zu {{ title }}!</h1>
 
-<pi-led-list></pi-led-list>
+<pi-led-list #list></pi-led-list>
+<pi-controls (reload)="list.loadLeds()"></pi-controls>

@@ -35,17 +35,21 @@ export class LedListComponent implements OnInit, OnDestroy {
     console.log(this.blinkt);
     this.leds$ = this.blinkt.readLeds();
 
+    this.loadLeds();
+  }
+
+  ngOnDestroy(): void {
+    this.sub?.unsubscribe();
+    this.destroy$.emit();
+  }
+
+  loadLeds(): void {
     this.blinkt.readLeds()
       .subscribe({
         next: leds => this.leds = leds,
         error: err => console.warn(err),
         complete: () => console.log('habe fertig')
       });
-  }
-
-  ngOnDestroy(): void {
-    this.sub?.unsubscribe();
-    this.destroy$.emit();
   }
 
 }

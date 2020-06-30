@@ -7,18 +7,22 @@ import {LedListComponent} from './led-list/led-list.component';
 import {PiColorPipe} from './shared/pi-color.pipe';
 import {HttpClientModule} from '@angular/common/http';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { ControlsComponent } from './controls/controls.component';
+import {MatButtonModule} from '@angular/material/button';
 
 @NgModule({
   declarations: [
     AppComponent,
     LedComponent,
     LedListComponent,
-    PiColorPipe
+    PiColorPipe,
+    ControlsComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    NoopAnimationsModule
+    NoopAnimationsModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
