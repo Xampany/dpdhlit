@@ -1,5 +1,5 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
-import {Led} from '../led';
+import {Led} from '../shared/led';
 
 @Component({
   selector: 'pi-led',

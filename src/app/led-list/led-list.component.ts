@@ -1,5 +1,5 @@
 import {Component, EventEmitter, OnDestroy, OnInit} from '@angular/core';
-import {Led} from '../led';
+import {Led} from '../shared/led';
 import {BlinktService} from '../shared/blinkt.service';
 import {Observable, Subscription, timer} from 'rxjs';
 import {takeUntil} from 'rxjs/operators';
