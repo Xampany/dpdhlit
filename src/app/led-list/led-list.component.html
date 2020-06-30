@@ -15,6 +15,7 @@
   <tr>
     <td *ngFor="let item of leds">
       <pi-led [led]="item"></pi-led>
+      <a [routerLink]="[item.index]">Details</a>
     </td>
   </tr>
   </tbody>

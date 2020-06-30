@@ -12,6 +12,9 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { ColorFormComponent } from './color-form/color-form.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {AppRoutingModule} from '../app-routing/app-routing.module';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { DetailComponent } from './detail/detail.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,9 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
     LedListComponent,
     PiColorPipe,
     ControlsComponent,
-    ColorFormComponent
+    ColorFormComponent,
+    DashboardComponent,
+    DetailComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +34,8 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
     MatButtonModule,
     MatGridListModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

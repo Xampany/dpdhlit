@@ -1,0 +1,11 @@
+<p>dashboard works!</p>
+
+<mat-grid-list cols="2" rowHeight="2:1">
+  <mat-grid-tile>
+    <pi-color-form></pi-color-form>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <pi-led-list #list></pi-led-list>
+    <pi-controls (reload)="list.loadLeds()"></pi-controls>
+  </mat-grid-tile>
+</mat-grid-list>
